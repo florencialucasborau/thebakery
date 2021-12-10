@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Cormorant+Garamond:wght@300&family=Merriweather:ital,wght@1,300&family=Oxygen&family=Roboto+Condensed&family=Shadows+Into+Light&display=swap');
+/*PROYECTO FINAL - THE BAKERY/*PROYECTO FINAL - THE BAKERY
+BORDO: 6F1D1B
+NUDE: BB9457
+MARRON OSCURO: 432818
+MARRON CLARO: 99582A
+CREMA: FFE6A7    
+
+FUENTES:
+font-family: 'Merriweather', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+
+*/
+
+/*INDEX*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.body{
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr 1fr;
+    height: 100vh;
+}
+
+.header{
+    background-color: #A93226;
+    height: 150px;
+
+}
+
+.header_contenedorImg{
+    display: flex;
+    height: 120px;
+    width: 120px;
+    flex-wrap: wrap;
+    margin: 0%;
+    align-items: center;
+    object-fit: fill;
+    justify-content: center;
+    padding: 28px 0px 0px 10px;
+}
+
+.header_contenedorImg img{
+    width: 77%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.header-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-right: 1rem;
+
+}
+
+.header_item{
+    margin: 0px 10px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+header_item:hover, .header_item:active{
+    text-decoration: underline;
+}
+
+.separadorHeader{
+    background-color: #ffffff;
+    border: none;
+    margin: 2px;
+}
+
+.main{
+    background-color: #F5F5DC;
+    display: grid;
+    grid-template-rows: 500px 250px;
+}
+
+.hero{
+    height: 500px;
+    background-image: url(../img/inicio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hero-contenedor{
+    width: 700px;  
+}
+
+.button{
+    padding: 13px 15px;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    width: 200px;
+    margin-top: 13px;
+    color: white;
+    background-color: #A93226;
+    transition: background-color .5s;
+ 
+}
+
+button:hover {
+    background-color: #EC7063;
+  }
+
+.separador{
+    background-color: white;
+    border: none;
+    margin: 8px;
+}
+
+.contenedor-title{
+    display: flex;
+    height: 250px;
+    background-image: url(../img/fondo-title.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    filter:alpha;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+.title{
+    color: black;
+    opacity: 1;
+}
+
+.complementoMain{
+    height: 2550px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 0,75fr 0,75fr 0,75fr;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.complementoMain-contenedorNosotros{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.complementoMain-contenedor{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.complementoMain-contenedor--dist{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 400px;
+}
+
+.contenedorImagen{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    height: 420px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.contenedorImagen img{
+    height: 88%;   
+}
+
+.contenedorImagen--tartas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    height: 420px;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+.contenedorImagen--tartas img{
+    height: 63%;
+}
+
+
+.complementoRight{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Oxygen', sans-serif;
+    height: 420px;
+    padding-left: 30px;
+
+}
+
+.complementoLeft{
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    font-family: 'Oxygen', sans-serif;
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 40px;
+}
+
+.complementoMain-contenedorEventos{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding-bottom: 40px;
+}
+
+.contenedorImagen-eventos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    height: 420px;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.contenedorImagen-eventos img{
+    height: 80%;
+}
+
+/*FOOTER*/
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    background-color: #A93226;
+    height: 200px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.contenedorFooter-logo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+
+.contenedorFooter{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    
+}
+
+.contenedorFooter Img{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorFooter-contacto{
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
+.contenedorFooter-mapa{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contenedorFooter-mapa img{
+    width: 240px;
+    margin-right: 40px;
+
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.navegation-list{
+    color: #000;
+}
+
+/*CONTACTO*/
+
+/*FAQS*/
+
+/*EVENTOS*/
+
+.body--eventos{
+    display: grid;
+    height: 980px;
+    grid-template-rows: 1fr 3fr 1fr;
+    background-color: #F5F5DC;
+}
+
+.mainEventos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    
+}
+
+.mesaDulce{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.mesaDulce img{
+    width: 75%;
+}
+
+.contenedorDeParrafo--eventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    width: 600px;
+    color: black;
+    padding-right: 80px;
+}
+
+.button--eventos{
+    padding: 5px;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+    background-color: #A93226;
+    transition: background-color .5s;
+}
+
+button:hover {
+    background-color: #EC7063;
+  }
+
+/*NOSOTROS*/
+
+.body--nosotros{
+    display: grid;
+    grid-template-rows: 150px 1500px 200px;
+}
+
+.mainNosotros{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #F5F5DC;
+}
+
+.nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.contenedorDeImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.contenedorDeImagen--esencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.contenedorDeImagen img{
+    width: 70%;
+}
+
+.contenedorDeImagen--esencia img{
+    width: 50%;
+}
+
+.contenedorDeParrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    width: 600px;
+    color: black;
+    padding-right: 80px;
+}
+
+/*TIENDA ONLINE*/
+
+.imagenes-tienda{
+    width: 400px;
+}
+.imagenes-tienda img{
+    width: 100%;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px){
+
+    .complementoMain{
+        height: 2100px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .contenedorImagen img{
+        height: 60%;
+    }
+
+    .contenedorImagen--tartas img{
+        height: 45%;
+    }
+
+
+    .contenedorImagen-eventos img{
+        height: 60%;
+    }
+
+    
+    .complementoMain-contenedorNosotros{
+        padding-top: 20px;
+    }
+
+
+    .complementoMain-contenedorEventos{
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding-bottom: 10px;
+    }
+    
+    
+    .contenedorDeImagen img{
+        width: 55%;
+    }
+    
+    .contenedorDeParrafo{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 45%;
+        flex-wrap: wrap;
+        font-family: 'Barlow', sans-serif;
+        font-size: 14px;
+        width: 400px;
+        color: black;
+        padding-right: 80px;
+    }
+
+    .footer{
+        height: 180px;
+        font-size: 13px;
+    }
+
+    .contenedorFooter-mapa img{
+        width: 200px;
+        margin-right: 40px;
+    
+    }
+}
