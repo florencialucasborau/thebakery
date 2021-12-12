@@ -193,15 +193,22 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
-    height: 420px;
+    height: 430px;
     flex-direction: column;
     justify-content: center;
     padding-left: 15px;
+    
 }
 
 .contenedorImagen img{
-    height: 88%;   
+    height: 80%;
+    transition: height 1s;
 }
+
+.contenedorImagen img:hover {
+    height: 86%;
+}
+
 
 .contenedorImagen--tartas{
     display: flex;
@@ -210,13 +217,17 @@ button:hover {
     height: 420px;
     flex-direction: column;
     justify-content: center;
-    padding-right: 60px;
+    padding-right: 15px;
 }
 
 .contenedorImagen--tartas img{
-    height: 63%;
+    height: 60%;
+    transition: height 1s; 
 }
 
+.contenedorImagen--tartas img:hover {
+    height: 65%;
+  }
 
 .complementoRight{
     display: flex;
@@ -225,8 +236,8 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     font-family: 'Oxygen', sans-serif;
-    height: 420px;
-    padding-left: 30px;
+    height: 410px;
+    padding-left: 40px;
 
 }
 
@@ -236,7 +247,7 @@ button:hover {
     flex-wrap: wrap;
     font-family: 'Oxygen', sans-serif;
     width: 100%;
-    padding-right: 60px;
+    padding-right: 40px;
     padding-left: 40px;
 }
 
@@ -260,7 +271,12 @@ button:hover {
 
 .contenedorImagen-eventos img{
     height: 80%;
+    transition: height 1s; 
 }
+
+.contenedorImagen-eventos img:hover {
+    height: 85%;
+  }
 
 /*FOOTER*/
 
