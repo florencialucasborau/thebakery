@@ -33,6 +33,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .navbar > .container-fluid{
     align-items: flex-end;
+    font-family: 'Merriweather', serif;
 }
 .navbar-toggler{
     align-self: center;
@@ -286,15 +287,16 @@ button:hover {
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
     background-color: #A93226;
-    height: 200px;
+    color: white;
     font-family: 'Merriweather', serif;
-    font-weight: 700;
+    padding-top: 12px;
 }
 
 .contenedorFooter-logo{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 30px;
+    
     
 }
 
@@ -323,16 +325,19 @@ button:hover {
     
 }
 
-.contenedorFooter-mapa img{
-    width: 240px;
-    margin-right: 40px;
-
+.contenedorFooter-mapa img {
+    width: 400px;
+    margin: 25px;
 }
 
 .navegacion{
     display: flex;
     flex-direction: column; 
     
+}
+
+.formulario{
+    padding-left: 60px;
 }
 
 
@@ -346,14 +351,14 @@ button:hover {
 .body--eventos{
     display: grid;
     height: 980px;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
     background-color: #F5F5DC;
 }
 
 .mainEventos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 20px;
+    padding: 60px;
     
 }
 
@@ -476,20 +481,30 @@ button:hover {
         height: 60%;
     }
 
+    .contenedorImagen img:hover {
+        height: 67%;
+    }
+
     .contenedorImagen--tartas img{
         height: 45%;
     }
 
+    .contenedorImagen--tartas img:hover {
+        height: 52%;
+      }    
 
     .contenedorImagen-eventos img{
         height: 60%;
     }
 
+    .contenedorImagen-eventos img:hover {
+        height: 65%;
+      }
+
     
     .complementoMain-contenedorNosotros{
         padding-top: 20px;
     }
-
 
     .complementoMain-contenedorEventos{
         width: auto;
@@ -498,7 +513,6 @@ button:hover {
         place-items: center;
         padding-bottom: 10px;
     }
-    
     
     .contenedorDeImagen img{
         width: 55%;
@@ -524,6 +538,8 @@ button:hover {
     .contenedorFooter-mapa img{
         width: 200px;
         margin-right: 40px;
-    
+
     }
+
+    
 }
