@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Cormorant+Garamond:wght@300&family=Merriweather:ital,wght@1,300&family=Oxygen&family=Roboto+Condensed&family=Shadows+Into+Light&display=swap');
 /*PROYECTO FINAL - THE BAKERY/*PROYECTO FINAL - THE BAKERY
-BORDO: 6F1D1B
+BORDO: A93226
 NUDE: BB9457
 MARRON OSCURO: 432818
 MARRON CLARO: 99582A
@@ -31,10 +31,11 @@ font-family: 'Roboto Condensed', sans-serif;
     height: 100vh;
 }
 
-.header{
-    background-color: #A93226;
-    height: 150px;
-
+.navbar > .container-fluid{
+    align-items: flex-end;
+}
+.navbar-toggler{
+    align-self: center;
 }
 
 .header_contenedorImg{
@@ -100,7 +101,7 @@ header_item:hover, .header_item:active{
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Shadows Into Light', cursive;
-    font-size: 60px;
+    font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,8 +110,8 @@ header_item:hover, .header_item:active{
     flex-wrap: wrap;
 }
 
-.hero-contenedor{
-    width: 700px;  
+p{
+    margin-bottom: 0rem;
 }
 
 .button{
