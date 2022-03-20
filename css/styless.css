@@ -384,14 +384,35 @@ button:hover {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.tittle-contacto{
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+
+.contenedor-tittleContacto{
+    display: flex;
+    background-image: url(../img/cake.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 260px;
+    padding-top: 130px;
+
+}
+
 .mainContacto{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1fr;
 }
 
 .mainSection1{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0px;
 }
 
 .contenedorInfo{
@@ -454,25 +475,69 @@ button:hover {
 
 /*FAQS*/
 
-/*EVENTOS*/
-
-.body--eventos{
+.bodyFaqs{
     display: grid;
-    height: 1170px;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1.5fr 1fr 2fr 1fr;
+    height: 800px;
     background-color: #F5F5DC;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.contenedor-tittleFaqs{
+    display: flex;
+    background-image: url(../img/cupcakes.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 260px;
+    padding-top: 115px;
+
+}
+
+.mainFaqs{
+    margin: 50px;
+}
+
+.pregunta{
+    margin: 30px;
+}
+
+/*EVENTOS*/
+
+.body--eventos{
+    display: grid;
+    height: 900px;
+    grid-template-rows: 0.5fr 5fr 1fr;
+    background-color: #F5F5DC;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contenedor-tittleEventos{
+    display: flex;
+    background-image: url(../img/macarrons.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 260px;
+    padding-top: 115px;
+}
+
 .mainEventos{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 60px;
+    grid-template-rows: 0.5fr 1fr 1fr;
 }
 
 .mesaDulce{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
@@ -527,7 +592,7 @@ button:hover {
     background-color: #F5F5DC;
 }
 
-.contenedor-tittle{
+.contenedor-tittleNosotros{
     display: flex;
     background-image: url(../img/donas.jpg);
     background-position: center;
@@ -582,12 +647,277 @@ button:hover {
 
 /*TIENDA ONLINE*/
 
-.imagenes-tienda{
-    width: 400px;
+.bodyTienda{
+    display: grid;
+    height: 900px;
+    grid-template-rows: 0.5fr 5fr 1fr;
+    background-color: #F5F5DC;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-.imagenes-tienda img{
+
+.contenedor-tittleTienda{
+    display: flex;
+    background-image: url(../img/chocolatecake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 260px;
+    padding-top: 115px;
+}
+
+.tittleTienda{
+    font-size: 50px;
+    margin: 5px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.mainTienda{
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
+}
+
+.mesaDulce{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.mesaDulce img{
+    width: 75%;
+    margin: 25px;
+}
+
+.infoEventos{
+    margin: 15px;
+}
+
+.contenedorTienda{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 16px;
+    color: black;
+}
+
+.subcontenedorTienda{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-left: 42px;
+    margin-top: 40px;
+}
+
+.subcontenedorTienda1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 40px;
+}
+
+.subcontenedorTienda2{
+    display: grid;
+    grid-gap: 60px;
+    grid-template-areas: 'cuadricula1 cuadricula2 cuadricula3 cuadricula4' 'cuadricula5 cuadricula6 cuadricula7 cuadricula8';
+    color: black;
+    margin: 20px;
+    justify-content: center;
+}
+
+.subcontenedorTienda3{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas: 'rectangulo1 rectangulo2 rectangulo3' 'rectangulo4 rectangulo5 rectangulo6';
+    color: black;
+    margin-top: 50px;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.cuadricula1{
+    grid-area: cuadricula1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.cuadricula2{
+    grid-area: cuadricula2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.cuadricula3{
+    grid-area: cuadricula3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.cuadricula4{
+    grid-area: cuadricula4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.cuadricula5{
+    grid-area: cuadricula5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.cuadricula6{
+    grid-area: cuadricula6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.cuadricula7{
+    grid-area: cuadricula7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.cuadricula8{
+    grid-area: cuadricula8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+.rectangulo1{
+    grid-area: rectangulo1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+}
+
+.rectangulo2{
+    grid-area: rectangulo2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+}
+
+.rectangulo3{
+    grid-area: rectangulo3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+}
+
+.rectangulo4{
+    grid-area: rectangulo4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+}
+
+.rectangulo5{
+    grid-area: rectangulo5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+}
+
+.rectangulo6{
+    grid-area: rectangulo6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+}
+
+.rectangulo1 img{
+    height: 100%;
+}
+
+.rectangulo2 img{
+    height: 100%;
+}
+
+.rectangulo3 img{
+    height: 100%;
+}
+.rectangulo4 img{
+    height: 100%;
+}
+
+.rectangulo5 img{
+    height: 100%;
+}
+
+.rectangulo6 img{
+    height: 100%;
+}
+
+.cuadricula1 img{
     width: 100%;
 }
+
+.cuadricula2 img{
+    width: 100%;
+}
+
+.cuadricula3 img{
+    width: 100%;
+}
+
+.cuadricula4 img{
+    width: 100%;
+}
+
+.cuadricula5 img{
+    width: 100%;
+}
+
+.cuadricula6 img{
+    width: 100%;
+}
+
+.cuadricula7 img{
+    width: 100%;
+}
+
+.cuadricula8 img{
+    width: 100%;
+}
+
+.button--eventos{
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+    background-color: #A93226;
+    transition: background-color .5s;
+}
+
+button:hover {
+    background-color: #EC7063;
+  }
 
 /*MEDIA QUERIES*/
 
